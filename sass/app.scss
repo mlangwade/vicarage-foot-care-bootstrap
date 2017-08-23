@@ -1,0 +1,52 @@
+@import "customVariables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+
+body{
+  background: url(/images/pier.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar {
+  margin: 20px auto;
+  width: 65%;
+
+  .navbar-brand{
+    color: $brand-primary;
+  }
+}
+
+.intro {
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+
+  h2::after{
+    content: "";
+    padding-top: 5px;
+    border-bottom:2px solid $brand-primary;
+    width:40%;
+    display:block;
+    margin:0 auto;
+  }
+
+}
+
+.slogan {
+  text-align: center;
+  padding-top: 50px;
+
+  span{
+    color: white;
+  }
+}
+
+.about{
+  background: rgba(white, 0.7);
+  padding: 20px;
+  border: 2px solid $gray-light;
+  width: 50%;
+  margin: 75px auto;
+  position: relative;
+}
